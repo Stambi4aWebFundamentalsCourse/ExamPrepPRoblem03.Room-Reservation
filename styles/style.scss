@@ -1,0 +1,148 @@
+﻿$bg-color-header: #F1F1F1;
+$bg-color-page: #EBEBEB;
+$bg-color-button: #32A2E4;
+$color-heading: $bg-color-button;
+$color-font: #3F3533;
+$fonts: Tahoma, Helvetica, sans-serif;
+$border-color: #999;
+$border-section: 1px dashed $border-color;
+
+body {
+    #wrapper {
+        h2 {
+            font-size: 16px;
+        }
+        max-width: 800px;
+        height: auto;
+        background-color: $bg-color-page;
+        margin: 0 auto;
+        padding: 0 40px;
+        font-family: $fonts;
+        font-size: 13px;
+        color: $color-font;
+        header {
+            background-color: $bg-color-header;
+            padding: 10px 20px;
+            h1 {
+                color:$color-heading;
+                font-size: 28px;
+                font-weight: 500;
+            }
+            border-bottom: $border-section;
+        }
+        section {
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+            div {
+                margin:10px auto;
+            }
+            div#left {
+                width: 60%;
+            }
+
+            div#right {
+                margin-top: 30px;
+                width: 25%;
+                span {
+                    font-weight: 600;
+                }
+                input {
+                    padding:10px;
+                    border-radius: 4px;
+                    border: 1px solid $border-color;
+                }
+                button {
+                    background-color: white;
+                    background:url("images/magnifier.png") no-repeat;
+                    background-size: contain;
+                    height: 15px;
+                    width: 15px;
+                    vertical-align: middle;
+                    margin-left: -26px;
+                    margin-top: 2px;
+                    border: none;
+                }
+            }
+        }
+        form {
+            height: 200px;
+            border-bottom: $border-section;
+            border-top: $border-section;
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+            fieldset {
+                margin-left: 30px;
+                border: none;
+            }
+
+            input, select {
+                margin-bottom: 5px;
+                padding: 5px 10px;
+                border-radius: 4px;
+                border: 1px solid $border-color;
+            }
+            fieldset#left-fieldset {
+                h2 {
+                    margin-left: 10px;
+                }
+                input {
+                    margin-top: 5px;
+                }
+                width: 20%;
+            }
+            fieldset#right-fieldset {
+                width: 70%;
+                div {
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    margin-right: 10px;
+                    span {
+                        font-weight: 600;
+                    }
+                }
+                div#room {
+                    width: 60%;
+                    select {
+                        option {
+                            width: 280px;
+                        } 
+                    }
+                }
+
+                div#number {
+                    width: 30%;
+                }
+
+                div#check-in {
+                    width: 45%;
+                    input {
+                        width: 220px;
+                    }
+                }
+
+                div#check-out {
+                    width: 45%;
+                    input {
+                        width: 220px;
+                    }
+                }
+            }
+        }
+        footer {
+            padding: 20px 10px 60px;
+            display: flex;
+            justify-content: flex-end;
+            button {
+                padding: 10px 40px;
+                background-color: $bg-color-button;
+                color: white;
+                font-weight: 600;
+                border-radius: 5px;
+                border: none;
+            }
+        }
+    }
+}

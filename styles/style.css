@@ -1,0 +1,102 @@
+﻿body #wrapper {
+  max-width: 800px;
+  height: auto;
+  background-color: #EBEBEB;
+  margin: 0 auto;
+  padding: 0 40px;
+  font-family: Tahoma, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #3F3533; }
+  body #wrapper h2 {
+    font-size: 16px; }
+  body #wrapper header {
+    background-color: #F1F1F1;
+    padding: 10px 20px;
+    border-bottom: 1px dashed #999; }
+    body #wrapper header h1 {
+      color: #32A2E4;
+      font-size: 28px;
+      font-weight: 500; }
+  body #wrapper section {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    body #wrapper section div {
+      margin: 10px auto; }
+    body #wrapper section div#left {
+      width: 60%; }
+    body #wrapper section div#right {
+      margin-top: 30px;
+      width: 25%; }
+      body #wrapper section div#right span {
+        font-weight: 600; }
+      body #wrapper section div#right input {
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid #999; }
+      body #wrapper section div#right button {
+        background-color: white;
+        background: url("images/magnifier.png") no-repeat;
+        background-size: contain;
+        height: 15px;
+        width: 15px;
+        vertical-align: middle;
+        margin-left: -26px;
+        margin-top: 2px;
+        border: none; }
+  body #wrapper form {
+    height: 200px;
+    border-bottom: 1px dashed #999;
+    border-top: 1px dashed #999;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    body #wrapper form fieldset {
+      margin-left: 30px;
+      border: none; }
+    body #wrapper form input, body #wrapper form select {
+      margin-bottom: 5px;
+      padding: 5px 10px;
+      border-radius: 4px;
+      border: 1px solid #999; }
+    body #wrapper form fieldset#left-fieldset {
+      width: 20%; }
+      body #wrapper form fieldset#left-fieldset h2 {
+        margin-left: 10px; }
+      body #wrapper form fieldset#left-fieldset input {
+        margin-top: 5px; }
+    body #wrapper form fieldset#right-fieldset {
+      width: 70%; }
+      body #wrapper form fieldset#right-fieldset div {
+        display: inline-block;
+        margin-bottom: 10px;
+        margin-right: 10px; }
+        body #wrapper form fieldset#right-fieldset div span {
+          font-weight: 600; }
+      body #wrapper form fieldset#right-fieldset div#room {
+        width: 60%; }
+        body #wrapper form fieldset#right-fieldset div#room select option {
+          width: 280px; }
+      body #wrapper form fieldset#right-fieldset div#number {
+        width: 30%; }
+      body #wrapper form fieldset#right-fieldset div#check-in {
+        width: 45%; }
+        body #wrapper form fieldset#right-fieldset div#check-in input {
+          width: 220px; }
+      body #wrapper form fieldset#right-fieldset div#check-out {
+        width: 45%; }
+        body #wrapper form fieldset#right-fieldset div#check-out input {
+          width: 220px; }
+  body #wrapper footer {
+    padding: 20px 10px 60px;
+    display: flex;
+    justify-content: flex-end; }
+    body #wrapper footer button {
+      padding: 10px 40px;
+      background-color: #32A2E4;
+      color: white;
+      font-weight: 600;
+      border-radius: 5px;
+      border: none; }
+

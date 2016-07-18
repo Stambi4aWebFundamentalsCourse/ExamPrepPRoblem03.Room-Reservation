@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Room Reservation</title>
+    <link href="styles/style.css" rel="stylesheet" />
+	<meta charset="utf-8" />
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1>Room Reservation</h1>
+    </header>
+    <section>
+        <div id="left">
+            <h2>Basic Information</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at nibh varius odio sollicitudin blandit nec eu elit. Suspendisse ac risus nunc, quis elementum lorem. Pellentesque vehicula egestas eros nec commodo.</p>
+        </div>
+        <div id="right">
+            <span>Search:</span>
+            <input type="search"/>
+            <button></button>
+        </div>
+    </section>
+    <form action="#" method="Get">
+        <fieldset id="left-fieldset">
+            <h2>Personal Details</h2>
+            <input type="text" name="First Name" placeholder="First Name"/>
+            <input type="text" name="Last Name" placeholder="Last Name"/>
+            <input type="text" name="Enter Email" placeholder="Email"/>
+        </fieldset>
+        <fieldset id="right-fieldset">
+            <h2>Request a reservation</h2>
+            <div id="room">
+                <span>Select a room:</span>
+                <select>
+                    <option value="Room1">Room1</option>
+                    <option value="Room2">Room2</option>
+                    <option value="Room3" selected="selected">Room3</option>
+                    <option value="Room4">Room4</option>
+                    <option value="Room5">Room5</option>
+                </select>
+            </div>
+            <div id="number">
+                <span>Number of Rooms:</span>
+                <input type="number" placeholder="1" />
+            </div>
+            <div id="check-in">
+                <span>Check-In:</span>
+                <input type="date" placeholder="dd-----yyyy" />
+            </div>
+            <div id ="check-out">
+                <span>Check-Out:</span>
+                <input type="date" placeholder="dd-----yyyy" />
+            </div> 
+        </fieldset>
+    </form>
+    <footer>
+        <button>Book now</button>
+    </footer>
+</div>
+</body>
+</html>
